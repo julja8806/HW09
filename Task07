@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Task07 {
+    public static int sumSecond(int m, int h, int s) {
+        return s = h * 3600 + m * 60;
+    }
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Input your time: ");
+            int time = scanner.nextInt();
+            int m = scanner.nextInt();
+            int h = scanner.nextInt();
+            int s = scanner.nextInt();
+            int result = sumSecond(m, h, s);
+            String msg = "Since the beginning of the day has passed  " + s + "second";
+            System.out.println(msg);
+        }
+
+    }
+
+
+
